@@ -5,9 +5,9 @@ def eachFile(filepath):
   return pathDir
 
 def readfile(name):
-  # fopen=open(name,'r')
-  fopen=open(name,mode='r',encoding='utf-8')
-  a =['DN20210906091635016']
+  fopen=open(name,'r')
+  # fopen=open(name,mode='r',encoding='utf-8')
+  a =['120128342678']
   for lines in fopen.readlines():     #按行读取text中的内容
     lines = lines.replace("\n", "").split(",")
     for str1 in a:
@@ -19,7 +19,7 @@ def readfile(name):
 
 
 
-filePath = r"C:\Users\linjie-033\Documents\日志\新建文件夹\3"
+filePath = r"C:\Users\linjie-033\Documents\日志\1"
  # 文件路径
 pathDir=eachFile(filePath)
 for allDir in pathDir:
